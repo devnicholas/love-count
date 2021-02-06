@@ -4,9 +4,9 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '/index.html',
-        '/style.css',
-        '/scripts.js',
+        'index.html',
+        'style.css',
+        'scripts.js',
         'manifest.json'
       ]);
     })
@@ -34,7 +34,7 @@ self.addEventListener('fetch', function (event) {
       return cachedResponse || fetch(event.request);
     })
     .catch(() => {
-        return caches.match('/index.html');
+        return caches.match('index.html');
     })
   );
 });
