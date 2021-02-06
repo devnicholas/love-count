@@ -77,6 +77,7 @@ var Countdown = {
             if (that.values.days >= days_in_month) {
 				that.values.days = 0;
 				++that.values.months;
+				Fireworks.init()
 			}
             
             if (that.values.months > 11) {
@@ -157,6 +158,18 @@ var Countdown = {
 		}
 	},
 };
+
+var Fireworks = {
+	init: function() {
+		$('.pyro').show()
+		setTimeout(() => {
+			this.stop()
+		}, 60 * 1000)
+	},
+	stop: function() {
+		$('.pyro').fadeOut(500)
+	}
+}
 
 // Let's go !
 Countdown.init();
