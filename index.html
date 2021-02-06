@@ -17,7 +17,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-        <link rel="manifest" href="manifest.json">
+        <link rel="manifest" href="./manifest.json">
 
         <meta name="msapplication-TileColor" content="#ea4c4c">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -232,7 +232,7 @@
 		<script src="scripts.js" async></script>
         <script async>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('./sw.js')
             }
         </script>
 	</body>

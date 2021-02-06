@@ -4,7 +4,7 @@
     "theme_color": "#ea4c4c",
     "background_color": "#fff",
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "/love-count/",
     "icons": [
         {
             "src": "\/images\/android-icon-36x36.png",
